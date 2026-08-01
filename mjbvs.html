@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJB Videos</title>
+    <link href="hk.css" rel="stylesheet"> 
+    <style>
+        .top{
+           width: 100%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;        /* 垂直居中 */
+            justify-content: center;    /* 整体水平居中 */
+            padding: 20px 20px;         /* 上下加一点内边距 */
+            box-sizing: border-box;
+            position: relative; 
+        }
+        img{
+            opacity: 0.8;
+        }
+        .bu {
+            position: absolute;         /* 绝对定位，脱离 flex 流 */
+            left: 20px;                /* 距离左边 20px */
+            top: 50%;                  /* 垂直居中 */
+            transform: translateY(-50%);
+        }
+        body{
+            background-color: #001624;
+        }
+        h1 {
+            color:blanchedalmond;
+            margin: 0;                 /* 去掉默认边距 */
+            text-align: center;
+            font-size: clamp(28px, 3vw, 36px);
+        }
+        p{
+            color: #e0e8f5;
+            text-shadow: 0 0 25px rgb(133, 249, 255);
+        }
+        .zt{
+            margin:30px 15px 30px 15px;
+            background-color: #080c14;
+            backdrop-filter: blur(8px);
+              border: 0.5px solid rgba(22, 150, 255, 0.521) ;  
+            border-top: 2px solid rgba(50, 98, 255, 0.3);
+            border-bottom: 1px solid rgba(50, 57, 255, 0.1);
+             box-shadow: 0 0 20px rgba(34, 111, 255, 0.352); 
+
+        }
+        .card{
+            flex: 1 1 250px;          /* 基础宽度150px，自动伸缩填满容器 */
+        max-width: 250px;
+        }
+        video{
+            box-shadow: 0 0 15px #62a6ff9a;
+            border-radius: 8px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+                <a href="index.html" class="bu " style="background-color: rgb(201, 242, 255); color: rgb(4, 205, 255); box-shadow: 0 0 18px rgb(37, 233, 255);">回去</a>
+                <h1 style="color: #dfe1ff; text-shadow:
+            0 0  20px rgba(120, 134, 255, 0.874)
+            ; "> MJB Videos</h1>
+    </div>
+     <div class="zt">
+        
+        <div class="aaa">
+            <div class="card">
+             <p>▶挑战全网俱乐部面队时间，。？！</p>   
+            <video src="img/v1.mp4" style="max-width: 330px; width: 110%;" controls>
+                
+            </div>
+             <div class="card">
+                <p>▶mjb俱乐部第一视角点单？！</p>
+                <video src="img/v2.mp4" style="max-width: 230px; width: 80%;" controls>
+                
+            </div>
+            <div class="card">
+                <p>▶MJB要社神！！。</p>
+                <video src="img/v3.mp4" style="max-width: 330px; width: 110%;" controls>
+                
+            </div>
+            <div class="card">
+               <p>▶MJB世界最权威董事长考核</p> 
+               <video src="img/v4.mp4" style="max-width: 330px; width: 110%;" controls>
+                
+            </div>
+            
+    
+</body>
+</html>

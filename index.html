@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃屎</title>
+    <link href="cs.css" rel="stylesheet"> 
+    <style>
+        
+        .hh {
+            background-image: url("img/mjb.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            display: flex;
+            padding:0;
+            margin:0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            margin-top: 60px;
+            border: 0;
+            border-radius: 0;
+
+        }
+        .jj {
+            display: flex;
+            border:8px black groove;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            box-shadow: 8px 15px 18px rgba(0,0,0,0.8);
+        }
+
+        .jj h2{
+            font-size: large;
+            color:gold
+            
+            
+        }
+        span{
+            font-size: small;
+        }
+        .jj p{
+            font-size:14px;
+            color:white
+        }
+        a{
+            color:wheat
+        }
+        
+        h3{
+            color:yellow;
+            font-size: medium;
+        }
+        .js {
+        display: flex;
+        flex-wrap: wrap;          /* 关键：允许卡片在窄屏时换行 */
+        justify-content: space-around; /* 改用 space-around 让卡片均匀分布 */
+        align-items: stretch;     /* 让同行的卡片高度一致 */
+        gap: 15px; 
+
+                      /* 用 gap 代替 margin，更干净 */
+    }
+    .club{
+            display: flex;
+        flex-wrap: wrap;          /* 关键：允许卡片在窄屏时换行 */
+        justify-content: space-around; /* 改用 space-around 让卡片均匀分布 */
+        align-items: stretch;     /* 让同行的卡片高度一致 */
+        gap: 15px; 
+        }
+
+    /* 修复卡片本身：自适应宽度，不再固定 */
+    .card  {
+        background-color: #606060;
+        
+        
+        /* 删除 width: 40%; */
+        flex: 1 1 180px;          /* 基础宽度150px，自动伸缩填满容器 */
+        max-width: 140px;         /* 限制最大宽度，避免过宽 */
+        padding: 3px 15px 20px;
+        /* 删除 margin: 30px; */
+        box-sizing: border-box;  
+        /* border: 3px groove black; */
+        border-radius: 20px; /* 让 border 和 padding 不增加额外宽度 */
+        opacity: 0.9;
+        box-shadow: 0px 10px 30px rgba(0,0,0,0.6),
+        0 0 20px rgba(255,215,0,0.08);
+    }
+
+    /* 可选：针对更小屏幕优化卡片宽度 */
+    
+        .dd{
+            background-image: url("img/mjb(1).png");
+            background-repeat: repeat-y;
+            z-index: 2;
+            background-size: contain;
+            background-position: top center;
+            border-radius: 20px 20px 0 0;
+            margin: 0;
+            border: 0;
+        }
+        .dd p{
+            color:whitesmoke;
+            font-size: 13px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1><em>MJB Club</em></h1>
+        <nav>
+            <ul>
+                
+
+                
+                <li><a style="color:wheat" href="#">MJB</a></li>
+                <li><a  href="HTMLPage2.html">福利</a></li>
+                <li><a href="HTMLPage1 (2).html">考核</a></li>
+                <li><a href="HTMLPage1 (3).html">乐子</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hh" >
+            
+        </section>
+        <section class="jj">
+            <h2>MJB俱乐部介绍</h2>
+            <p>  MJB俱乐部,两年市场第10086名,董事长私人洞希(B站：<a target="_blank" href="https://space.bilibili.com/1660792495?spm_id_from=333.337.0.0">私人洞希</a>)<br>俱乐部宣传视频:<br>▶挑战全网俱乐部面队时间，。？！<br><video src="img/v1.mp4"  style="max-width: 300px; width: 100%;" controls></video></a></p>
+            <a href="mjbvs.html" >更多MJB视频</a>
+            <span style="background-color: aqua;" id="ddd">暂不支持网页点单，请联系客服微信</span>
+        </section>
+        <section class="dd" >
+            <h2 style="font-size: large;">点单(客服vx:<a href="vx.html"  style="font-size: medium;">云少</a>)</h2>
+            <div class="club" style="height: 30px;">
+                        
+                    </div>
+            <div class="js" >
+                    
+                    <div class="card">
+                        <h3>宝宝单1<br></h3>
+                        <p style="color:lightyellow">原价12.9元  首单9.9元</p>
+                        <p>保底500万</p>
+                    </div>
+                    <div class="card">
+                        <h3>宝宝单2<br></h3>
+                        <p style="color:lightyellow">15.9元</p>
+                        <p>保底800万</p>
+                    </div>
+                    <div class="card">
+                        <h3>宝宝单3<br></h3>
+                        <p style="color:lightyellow">20元</p>
+                        <p>1000万</p>
+                    </div>
+                    <div class="card">
+                        <h3>绿卡单<br></h3>
+                        <p style="color:lightyellow">8.8元</p>
+                        <p>五红以上保600万（卡自己带）</p>
+
+                    </div>
+                
+                
+                    
+                    <div class="card">
+                        <h3>白卡单<br></h3>
+                        <p style="color:lightyellow">9.9元</p>
+                        <p>四红以上保500万（卡自己带）</p>
+
+
+                    </div>
+                    
+                    <div class="card">
+                        <h3>赌橙单<br></h3>
+                        <p style="color:lightyellow">20元</p>
+                        <p>出橙结单，不出就补</p>
+
+
+                    </div>
+                    <div class="card">
+                        <h3>死救单<br></h3>
+                        <p style="color:lightyellow">23.9元</p>
+                        <p>保底300万 死1次加100万保底(死了救起来也算)(1千万封顶+500万)</p>
+
+
+                    </div>
+                    <div class="card">
+                        <h3>特殊单<br></h3>
+                        <p style="color:lightyellow">19.9元</p>
+                        <p>保底300万到2000万（真随机！）</p>
+                    </div>
+                    <div class="card">
+                        <h3>开荒单（限一单）<br></h3>
+                        <p style="color:lightyellow">0.01元</p>
+                        <p>保底10∽100000万</p>
+                    </div>
+                    <div class="card">
+                        <h3>黑门单<br></h3>
+                        <p style="color:lightyellow">9.9元</p>
+                        <p>老板打手各开两箱子，比打手多返十五元</p>
+                    </div>
+
+                
+                
+            </div>
+            <div style="height: 30px;"></div>
+            <p><span style="background-color:rgba(4, 238, 255,30); color:black ;">(Club所有成员订单所有一折 董事长(0.91折)</span><br>
+            护航垃圾游戏毁我青春三观不正的吗展开全部都是你的了吗楼主看到我了吗很没面子了吧你甚至是什么意思啊展开全部都是你的了吗很没面子了吧你甚至是什么意思啊展开全部都是你的了吗很没面子了吧你甚至是什么意思啊展开全部都是你自己说的呀？
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p style="color:grey">注：小麦色文字为可点击链接</p>
+        <p style="color:wheat">(■■■)</p>
+        
+        <p style="font-size:5px">最终解释权由私人洞希所有</p>
+    </footer>
+</body>
+</html>

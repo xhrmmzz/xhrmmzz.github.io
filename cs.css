@@ -1,0 +1,139 @@
+        * {
+            padding: 0;
+            margin: 0
+        }
+        .hh{
+            margin-top: 60px;
+        }
+        
+        header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;        /* 保留右侧内边距 */
+    /* 删掉 gap: 1vw; */
+}
+a{
+    font-size: small;
+}
+h3{
+    font-size: medium;
+}
+p{
+    font-size: small;
+}
+/* 2. 修改 header li：使用 flex 布局让 a 填满，并控制内边距 */
+header li {
+    height: 60px;           /* 与 header 一致 */
+    /* width: auto; 可省略，由内容撑开 */
+    line-height: 60px;      /* 保持文字垂直居中 */
+    text-align: center;
+    /* padding: 0 2vw;  *//* 建议删掉，改用 a 的内边距 */
+    display: flex;          /* 新增：让内部的 a 可以 flex 填充 */
+    align-items: center;    /* 新增：垂直居中 */
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* 3. 修改 header a：占满父容器，并添加内边距控制点击区域大小 */
+header a {
+    color: white;
+    font-size: clamp(13px, 1.5vw, 18px);
+    text-decoration: none;
+    /* display: block; */   /* 注释掉或删掉 */
+    display: flex;          /* 改用 flex，更好地控制内部 */
+    align-items: center;    /* 文字垂直居中 */
+    justify-content: center;/* 文字水平居中 */
+    height: 100%;           /* 填满 li 的高度 */
+    
+    padding: 0 2vw;         /* 将原来 li 的内边距移到这里，控制每个链接的左右间距 */
+    white-space: nowrap;    /* 防止文字换行 */
+}
+
+        header a:hover {
+            background-color: gray
+        }
+        .bu{
+            background-color: gray;
+            width: 70px;
+            border-radius: 20px;
+            box-shadow: 
+            3px 8px 15px black
+            ;
+    font-size: clamp(13px, 1.5vw, 18px);
+    text-decoration: none;
+    /* display: block; */   /* 注释掉或删掉 */
+    display: flex;          /* 改用 flex，更好地控制内部 */
+    align-items: center;    /* 文字垂直居中 */
+    justify-content: center;/* 文字水平居中 */
+    height: 36px;           /* 填满 li 的高度 */
+    
+    padding: 0 2vw;         /* 将原来 li 的内边距移到这里，控制每个链接的左右间距 */
+    white-space: nowrap;
+
+        }
+        .bupt{
+            background-color:chartreuse;
+            box-shadow: 0 0 15px rgb(251, 255, 0);
+        }
+        .budj{
+            background-color:red;
+            box-shadow: 0 0 20px rgb(255, 0, 0);
+            
+        }
+
+   
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(gray,black);
+            background-color: dimgray;
+            opacity: 0.95;
+            border: 0;
+            
+            padding: 0 20px 0;
+            height: 60px;
+            margin-bottom: 60px;
+            width: 100%;
+            
+            /* ✅ 新增：让 padding 包含在 width 内 */
+    z-index: 100;
+      
+        }
+        h1 {
+            color: wheat;
+            position: absolute;
+            font-size:clamp(22px,3vw,30px);
+            top: 45%;
+            transform: translateY(-50%); 
+            left: 6vw;
+            
+            
+
+        }
+        section {
+            background-color: #323232;
+            border: 5px #606060 solid;
+            padding: 10px 20px 20px;
+            margin:30px;
+            border-radius: 20px ;
+            
+        }
+        footer {
+            background-color: #323232;
+            border: 8px black ridge;
+            padding: 10px 20px 20px
+        }
+        h2{
+            color:white
+        }
+        .img-responsive {
+    max-width:30%;
+    height: auto;
+    width: 30%; /* 或你想要的百分比 */
+}
